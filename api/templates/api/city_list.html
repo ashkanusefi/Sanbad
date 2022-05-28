@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2 dir="rtl" style="background-color: #57861d;text-align: center;height: 100px">زمان حال : {{ time }}</h2>
+{% for i in cities %}
+    <div dir="rtl" style="background-color: orange">
+     نام شهر :     {{ i.city }}
+        <br>
+         دما : {{ i.temp }}
+        <br>
+         تاریخ به روز رسانی دما :{{ i.last_update_time }}
+        <br>
+    </div>
+    <hr>
+{% endfor %}
+</body>
+</html>

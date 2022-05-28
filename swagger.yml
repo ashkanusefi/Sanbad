@@ -1,0 +1,22 @@
+info:
+  title: city
+  version: 1.0.0
+servers:
+  - url: http://127.0.0.1:8000
+paths:
+  /api/city-details:
+    get:
+      tags:
+        - default
+      summary: http://127.0.0.1:8000/weather/city-details/?city_name=$city_name
+      parameters:
+        - name: city_name
+          in: query
+          schema:
+            type: string
+          example: تهران
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
